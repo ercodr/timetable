@@ -56,16 +56,17 @@
 
 
     <div class="button">
-        <button type="button" onclick="day1()" id="d1">Tue. 13th July</button>
-        <button type="button" onclick="day2()" id="d2">Thu. 15th July</button>
-        <button type="button" onclick="day3()" id="d3">Sat. 17th July</button>
-        <button type="button" onclick="day4()" id="d4">Tue. 20nd July</button>
-        <button type="button" onclick="day5()" id="d5">Thu. 22th July</button>
-        <button type="button" onclick="day6()" id="d6">Sat. 24th July</button>
+        <button type="button" onclick="day1()" id="d1" class="btn">Tue. 13th July</button>
+        <button type="button" onclick="day2()" id="d2" class="btn">Thu. 15th July</button>
+        <button type="button" onclick="day3()" id="d3" class="btn">Sat. 17th July</button>
+        <button type="button" onclick="day4()" id="d4" class="btn">Tue. 20nd July</button>
+        <button type="button" onclick="day5()" id="d5" class="btn">Thu. 22th July</button>
+        <button type="button" onclick="day6()" id="d6" class="btn">Sat. 24th July</button>
     </div>
 
     <!-- <p id="date">Date: </p> -->
     <div class="detail">
+        <p id="date"></p>
         <p id="course"></p>
         <p id="duration"></p>
         <p id="venue"></p>
@@ -81,6 +82,7 @@
 
         if(day == 13+1 && month == 7 && year == 2021){
             document.getElementById('d1').style.display = 'none';
+
         }
 
         if(day == 15+1 && month == 7 && year == 2021){
@@ -107,39 +109,124 @@
     <script>
 
         function day1() {
+                document.getElementById('date').innerHTML = 'Tue. 13th July';
                 document.getElementById('course').innerHTML = 'ICT Project Management';
                 document.getElementById('duration').innerHTML ='8:00am - 10:00am';
                 document.getElementById('venue').innerHTML = 'Basement';
+                document.getElementById('d1').style.backgroundColor = 'transparent';
+                document.getElementById('d1').style.color = '#343bff';
+
+                document.getElementById('d6').style.backgroundColor = '';
+                document.getElementById('d6').style.color = '';
+                document.getElementById('d5').style.backgroundColor = '';
+                document.getElementById('d5').style.color = '';
+                document.getElementById('d4').style.backgroundColor = '';
+                document.getElementById('d4').style.color = '';
+                document.getElementById('d3').style.backgroundColor = '';
+                document.getElementById('d3').style.color = '';
+                document.getElementById('d2').style.backgroundColor = '';
+                document.getElementById('d2').style.color = '';
+
         }
 
         function day2() {
+                document.getElementById('date').innerHTML = 'Thu. 15th July';
                 document.getElementById('course').innerHTML ='Software Engineering';
                 document.getElementById('duration').innerHTML ='8:00am - 10:00am';
                 document.getElementById('venue').innerHTML = 'Basement';
+                document.getElementById('d2').style.backgroundColor = 'transparent';
+                document.getElementById('d2').style.color = '#343bff';
+
+                document.getElementById('d1').style.backgroundColor = '';
+                document.getElementById('d1').style.color = '';
+                document.getElementById('d6').style.backgroundColor = '';
+                document.getElementById('d6').style.color = '';
+                document.getElementById('d5').style.backgroundColor = '';
+                document.getElementById('d5').style.color = '';
+                document.getElementById('d4').style.backgroundColor = '';
+                document.getElementById('d4').style.color = '';
+                document.getElementById('d3').style.backgroundColor = '';
+                document.getElementById('d3').style.color = '';
         }
 
         function day3() {
+                document.getElementById('date').innerHTML = 'Sat. 17th July';
                 document.getElementById('course').innerHTML ='Database (Oracle)';
                 document.getElementById('duration').innerHTML ='8:00am - 10:00am';
                 document.getElementById('venue').innerHTML = 'Basement';
+                document.getElementById('d3').style.backgroundColor = 'transparent';
+                document.getElementById('d3').style.color = '#343bff';
+
+                document.getElementById('d2').style.backgroundColor = '';
+                document.getElementById('d2').style.color = '';
+                document.getElementById('d1').style.backgroundColor = '';
+                document.getElementById('d1').style.color = '';
+                document.getElementById('d6').style.backgroundColor = '';
+                document.getElementById('d6').style.color = '';
+                document.getElementById('d5').style.backgroundColor = '';
+                document.getElementById('d5').style.color = '';
+                document.getElementById('d4').style.backgroundColor = '';
+                document.getElementById('d4').style.color = '';
         }
 
         function day4() {
+                document.getElementById('date').innerHTML = 'Tue. 20nd July';
                 document.getElementById('course').innerHTML = 'Course: ' + 'Research Method';
                 document.getElementById('duration').innerHTML = '8:00am - 10:00am';
                 document.getElementById('venue').innerHTML = 'Basement';
+                document.getElementById('d4').style.backgroundColor = 'transparent';
+                document.getElementById('d4').style.color = '#343bff';
+
+                document.getElementById('d3').style.backgroundColor = '';
+                document.getElementById('d3').style.color = '';
+                document.getElementById('d2').style.backgroundColor = '';
+                document.getElementById('d2').style.color = '';
+                document.getElementById('d1').style.backgroundColor = '';
+                document.getElementById('d1').style.color = '';
+                document.getElementById('d5').style.backgroundColor = '';
+                document.getElementById('d5').style.color = '';
+                document.getElementById('d6').style.backgroundColor = '';
+                document.getElementById('d6').style.color = '';
         }
 
         function day5() {
+                document.getElementById('date').innerHTML = 'Thu. 22th July';
                 document.getElementById('course').innerHTML = 'Data Comm II';
                 document.getElementById('duration').innerHTML ='8:00am - 10:00am';
                 document.getElementById('venue').innerHTML = 'V21 - v22 - v23';
+                document.getElementById('d5').style.backgroundColor = 'transparent';
+                document.getElementById('d5').style.color = '#343bff';
+
+                document.getElementById('d4').style.backgroundColor = '';
+                document.getElementById('d4').style.color = '';
+                document.getElementById('d3').style.backgroundColor = '';
+                document.getElementById('d3').style.color = '';
+                document.getElementById('d2').style.backgroundColor = '';
+                document.getElementById('d2').style.color = '';
+                document.getElementById('d1').style.backgroundColor = '';
+                document.getElementById('d1').style.color = '';
+                document.getElementById('d6').style.backgroundColor = '';
+                document.getElementById('d6').style.color = '';
         }
 
         function day6() {
+                document.getElementById('date').innerHTML = 'Sat. 24th July';
                 document.getElementById('course').innerHTML = 'Operating System';
                 document.getElementById('duration').innerHTML ='3:30pm - 5:30pm';
                 document.getElementById('venue').innerHTML = 'Basement';
+                document.getElementById('d6').style.backgroundColor = 'transparent';
+                document.getElementById('d6').style.color = '#343bff';
+
+                document.getElementById('d5').style.backgroundColor = '';
+                document.getElementById('d5').style.color = '';
+                document.getElementById('d4').style.backgroundColor = '';
+                document.getElementById('d4').style.color = '';
+                document.getElementById('d3').style.backgroundColor = '';
+                document.getElementById('d3').style.color = '';
+                document.getElementById('d2').style.backgroundColor = '';
+                document.getElementById('d2').style.color = '';
+                document.getElementById('d1').style.backgroundColor = '';
+                document.getElementById('d1').style.color = '';
         }
     </script>
 </body>
