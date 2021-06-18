@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: poppins;
+        }
+
+        .button{
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        button{
+            padding: 1rem 2rem;
+            border: none;
+            background-color: #343bff;
+            color: #ffffff;
+            margin: .5rem 0;
+            border-radius: 1rem;
+            border-bottom-right-radius: 0;
+            font-size: 1rem;
+            cursor: pointer;
+            border: 1px solid #343bff;
+            transition: .25s;
+        }
+
+         button:hover{
+             background-color: transparent;
+             color: #343bff;
+             border: 1px solid #343bff;
+         }
+
+        p{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 600px){
+            p{
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+    
+
+
+    <div class="button">
+        <button type="button" onclick="day1()" id="d1">Tue. 13th July</button>
+        <button type="button" onclick="day2()" id="d2">Thu. 15th July</button>
+        <button type="button" onclick="day3()" id="d3">Sat. 17th July</button>
+        <button type="button" onclick="day4()" id="d4">Tue. 20nd July</button>
+        <button type="button" onclick="day5()" id="d5">Thu. 22th July</button>
+        <button type="button" onclick="day6()" id="d6">Sat. 24th July</button>
+    </div>
+
+    <!-- <p id="date">Date: </p> -->
+    <div class="detail">
+        <p id="course"></p>
+        <p id="duration"></p>
+        <p id="venue"></p>
+    </div>
+    
+
+    <script>
+        var currentDate = new Date()
+        var day = currentDate.getDate()
+        var month = currentDate.getMonth() + 1
+        var year = currentDate.getFullYear()
+        // document.write("<p>" + day + "/" + month + "/" + year + "</p>")
+
+        if(day == 13+1 && month == 7 && year == 2021){
+            document.getElementById('d1').style.display = 'none';
+        }
+
+        if(day == 15+1 && month == 7 && year == 2021){
+            document.getElementById('d1').style.display = 'none';
+        }
+
+        if(day == 17+1 && month == 7 && year == 2021){
+            document.getElementById('d1').style.display = 'none';
+        }
+
+        if(day == 20+1 && month == 7 && year == 2021){
+            document.getElementById('d1').style.display = 'none';
+        }
+
+        if(day == 22+1 && month == 7 && year == 2021){
+            document.getElementById('d1').style.display = 'none';
+        }
+
+        if(day == 24+1 && month == 7 && year == 2021){
+            document.getElementById('d1').style.display = 'none';
+        }
+    </script>
+
+    <script>
+
+        function day1() {
+                document.getElementById('course').innerHTML = 'ICT Project Management';
+                document.getElementById('duration').innerHTML ='8:00am - 10:00am';
+                document.getElementById('venue').innerHTML = 'Basement';
+        }
+
+        function day2() {
+                document.getElementById('course').innerHTML ='Software Engineering';
+                document.getElementById('duration').innerHTML ='8:00am - 10:00am';
+                document.getElementById('venue').innerHTML = 'Basement';
+        }
+
+        function day3() {
+                document.getElementById('course').innerHTML ='Database (Oracle)';
+                document.getElementById('duration').innerHTML ='8:00am - 10:00am';
+                document.getElementById('venue').innerHTML = 'Basement';
+        }
+
+        function day4() {
+                document.getElementById('course').innerHTML = 'Course: ' + 'Research Method';
+                document.getElementById('duration').innerHTML = '8:00am - 10:00am';
+                document.getElementById('venue').innerHTML = 'Basement';
+        }
+
+        function day5() {
+                document.getElementById('course').innerHTML = 'Data Comm II';
+                document.getElementById('duration').innerHTML ='8:00am - 10:00am';
+                document.getElementById('venue').innerHTML = 'V21 - v22 - v23';
+        }
+
+        function day6() {
+                document.getElementById('course').innerHTML = 'Operating System';
+                document.getElementById('duration').innerHTML ='3:30pm - 5:30pm';
+                document.getElementById('venue').innerHTML = 'Basement';
+        }
+    </script>
+</body>
+</html>
